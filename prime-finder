@@ -1,0 +1,16 @@
+BEGIN
+  DECLARE prime
+  DECLARE number
+  FOR number = 2 TO 100
+    prime = true
+
+    FOR i = FROM 2 TO number - 1
+      IF number MOD i = 0 THEN
+        prime = false
+      ENDIF
+
+    IF prime = true THEN
+      PRINT number
+    ENDIF
+  NEXT number
+END
