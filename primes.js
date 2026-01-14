@@ -1,6 +1,6 @@
 // prime-finder algorithm implementation
 
-const primes = []
+const primes = [1, 2]
 
 for (let n = 3; n <= 100; n++) {
     let isPrime = true
@@ -9,5 +9,6 @@ for (let n = 3; n <= 100; n++) {
     }
     if (isPrime) primes.push(n)
 }
+
 
 console.log(primes)
